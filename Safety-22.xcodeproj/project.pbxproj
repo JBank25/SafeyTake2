@@ -11,6 +11,7 @@
 		FF184D9928FF868F0030B647 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF184D9828FF868F0030B647 /* ContentView.swift */; };
 		FF184D9B28FF86940030B647 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF184D9A28FF86930030B647 /* Assets.xcassets */; };
 		FF184D9E28FF86940030B647 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF184D9D28FF86940030B647 /* Preview Assets.xcassets */; };
+		FF184DA528FF884B0030B647 /* WorldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF184DA428FF884B0030B647 /* WorldView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,8 @@
 		FF184D9828FF868F0030B647 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FF184D9A28FF86930030B647 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF184D9D28FF86940030B647 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FF184DA428FF884B0030B647 /* WorldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldView.swift; sourceTree = "<group>"; };
+		FF588CD2290446C90069DED2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +54,9 @@
 		FF184D9528FF868F0030B647 /* Safety-22 */ = {
 			isa = PBXGroup;
 			children = (
+				FF588CD2290446C90069DED2 /* Info.plist */,
 				FF184D9628FF868F0030B647 /* Safety_22App.swift */,
+				FF184DA428FF884B0030B647 /* WorldView.swift */,
 				FF184D9828FF868F0030B647 /* ContentView.swift */,
 				FF184D9A28FF86930030B647 /* Assets.xcassets */,
 				FF184D9C28FF86940030B647 /* Preview Content */,
@@ -139,6 +144,7 @@
 			files = (
 				FF184D9928FF868F0030B647 /* ContentView.swift in Sources */,
 				FF184D9728FF868F0030B647 /* Safety_22App.swift in Sources */,
+				FF184DA528FF884B0030B647 /* WorldView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +275,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Safety-22/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Safety-22/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -297,6 +304,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Safety-22/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Safety-22/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -11,7 +11,14 @@ import SwiftUI
 struct Safety_22App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabView{
+                NavigationView{
+                    WorldView()
+                }
+                .tabItem{
+                    Text("Location")
+                }
+            }
         }
     }
 }

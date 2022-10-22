@@ -21,6 +21,13 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
-    }
+            TabView{
+                NavigationView{
+                    WorldView()
+                }
+                .tabItem{
+                    Text("Location")
+                }
+            }
+        }
 }
