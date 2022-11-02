@@ -27,6 +27,7 @@ struct WorldView: View {
             .labelStyle(.titleAndIcon)
             .symbolVariant(.fill)
             .padding(.bottom, 50)
+            
         }
     }
 }
@@ -53,6 +54,7 @@ final class WorldViewModel: NSObject, ObservableObject, CLLocationManagerDelegat
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        twillTester()
         guard let latestLocation = locations.first else {
             return
         }
