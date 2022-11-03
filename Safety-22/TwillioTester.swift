@@ -9,8 +9,8 @@ func twillTester(){
     if let accountSID = ProcessInfo.processInfo.environment["TWILIO_ACCOUNT_SID"],
        let authToken = ProcessInfo.processInfo.environment["TWILIO_AUTH_TOKEN"] {
         
-        let url = "https://api.twilio.com/2022-11-01/Accounts/\(accountSID)/Calls"
-        let parameters = ["From": "+14793461171", "To": "+14699258093", "Url": "YOUR_TWIML_URL"]
+        let url = "https://api.twilio.com/2010-04-01/Accounts/\(accountSID)/Calls"
+        let parameters = ["From": "+14793461171", "To": "+14699258093", "Url": "https://handler.twilio.com/twiml/EHfe8edab9c7915c76822a8e59f8baf438"]
         
         AF.request(url, method: .post, parameters: parameters)
             .authenticate(username: accountSID, password: authToken)
