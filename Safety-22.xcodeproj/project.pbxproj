@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F46814D029108E10000ADAFA /* TwillioTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46814CF29108E10000ADAFA /* TwillioTester.swift */; };
+		F46814D3291092FD000ADAFA /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F46814D2291092FD000ADAFA /* Alamofire */; };
 		FF184D9728FF868F0030B647 /* Safety_22App.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF184D9628FF868F0030B647 /* Safety_22App.swift */; };
 		FF184D9928FF868F0030B647 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF184D9828FF868F0030B647 /* ContentView.swift */; };
 		FF184D9B28FF86940030B647 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF184D9A28FF86930030B647 /* Assets.xcassets */; };
@@ -15,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F46814CF29108E10000ADAFA /* TwillioTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwillioTester.swift; sourceTree = "<group>"; };
 		FF184D9328FF868F0030B647 /* Safety-22.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Safety-22.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF184D9628FF868F0030B647 /* Safety_22App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Safety_22App.swift; sourceTree = "<group>"; };
 		FF184D9828FF868F0030B647 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -29,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F46814D3291092FD000ADAFA /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +60,7 @@
 			children = (
 				FF588CD2290446C90069DED2 /* Info.plist */,
 				FF184D9628FF868F0030B647 /* Safety_22App.swift */,
+				F46814CF29108E10000ADAFA /* TwillioTester.swift */,
 				FF184DA428FF884B0030B647 /* WorldView.swift */,
 				FF184D9828FF868F0030B647 /* ContentView.swift */,
 				FF184D9A28FF86930030B647 /* Assets.xcassets */,
@@ -88,6 +93,9 @@
 			dependencies = (
 			);
 			name = "Safety-22";
+			packageProductDependencies = (
+				F46814D2291092FD000ADAFA /* Alamofire */,
+			);
 			productName = "Safety-22";
 			productReference = FF184D9328FF868F0030B647 /* Safety-22.app */;
 			productType = "com.apple.product-type.application";
@@ -116,6 +124,9 @@
 				Base,
 			);
 			mainGroup = FF184D8A28FF868E0030B647;
+			packageReferences = (
+				F46814D1291092FD000ADAFA /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = FF184D9428FF868F0030B647 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -143,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF184D9928FF868F0030B647 /* ContentView.swift in Sources */,
+				F46814D029108E10000ADAFA /* TwillioTester.swift in Sources */,
 				FF184D9728FF868F0030B647 /* Safety_22App.swift in Sources */,
 				FF184DA528FF884B0030B647 /* WorldView.swift in Sources */,
 			);
@@ -345,6 +357,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F46814D1291092FD000ADAFA /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F46814D2291092FD000ADAFA /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F46814D1291092FD000ADAFA /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FF184D8B28FF868E0030B647 /* Project object */;
 }
