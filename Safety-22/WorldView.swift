@@ -8,6 +8,8 @@
 import MapKit
 import SwiftUI
 import CoreLocationUI
+import FirebaseDatabase
+
 
 struct WorldView: View {
     
@@ -30,6 +32,9 @@ struct WorldView: View {
             
         }
     }
+    
+    
+
 }
 
 struct WorldView_Previews: PreviewProvider {
@@ -55,6 +60,8 @@ final class WorldViewModel: NSObject, ObservableObject, CLLocationManagerDelegat
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         twillTester()
+        let path = Database.database().reference().child("test");
+        path.childByAutoId().setValue("hello")
         guard let latestLocation = locations.first else {
             return
         }

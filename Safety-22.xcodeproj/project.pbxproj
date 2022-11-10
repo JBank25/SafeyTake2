@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18246688291C749300017C00 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18246687291C749300017C00 /* GoogleService-Info.plist */; };
 		1824668B291C75E800017C00 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 1824668A291C75E800017C00 /* FirebaseAnalytics */; };
 		1824668D291C75E800017C00 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 1824668C291C75E800017C00 /* FirebaseAnalyticsOnDeviceConversion */; };
 		1824668F291C75E800017C00 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1824668E291C75E800017C00 /* FirebaseAnalyticsSwift */; };
@@ -35,6 +34,7 @@
 		182466BB291C75E800017C00 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 182466BA291C75E800017C00 /* FirebaseRemoteConfigSwift */; };
 		182466BD291C75E800017C00 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 182466BC291C75E800017C00 /* FirebaseStorage */; };
 		182466BF291C75E800017C00 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 182466BE291C75E800017C00 /* FirebaseStorageCombine-Community */; };
+		182466C1291C822800017C00 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 182466C0291C822800017C00 /* GoogleService-Info.plist */; };
 		F46814D029108E10000ADAFA /* TwillioTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46814CF29108E10000ADAFA /* TwillioTester.swift */; };
 		F46814D3291092FD000ADAFA /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F46814D2291092FD000ADAFA /* Alamofire */; };
 		FF184D9728FF868F0030B647 /* Safety_22App.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF184D9628FF868F0030B647 /* Safety_22App.swift */; };
@@ -45,7 +45,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		18246687291C749300017C00 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		182466C0291C822800017C00 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F46814CF29108E10000ADAFA /* TwillioTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwillioTester.swift; sourceTree = "<group>"; };
 		FF184D9328FF868F0030B647 /* Safety-22.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Safety-22.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF184D9628FF868F0030B647 /* Safety_22App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Safety_22App.swift; sourceTree = "<group>"; };
@@ -114,8 +114,8 @@
 		FF184D9528FF868F0030B647 /* Safety-22 */ = {
 			isa = PBXGroup;
 			children = (
-				18246687291C749300017C00 /* GoogleService-Info.plist */,
 				FF588CD2290446C90069DED2 /* Info.plist */,
+				182466C0291C822800017C00 /* GoogleService-Info.plist */,
 				FF184D9628FF868F0030B647 /* Safety_22App.swift */,
 				F46814CF29108E10000ADAFA /* TwillioTester.swift */,
 				FF184DA428FF884B0030B647 /* WorldView.swift */,
@@ -228,7 +228,7 @@
 			files = (
 				FF184D9E28FF86940030B647 /* Preview Assets.xcassets in Resources */,
 				FF184D9B28FF86940030B647 /* Assets.xcassets in Resources */,
-				18246688291C749300017C00 /* GoogleService-Info.plist in Resources */,
+				182466C1291C822800017C00 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
