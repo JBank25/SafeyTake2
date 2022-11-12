@@ -8,7 +8,6 @@
 import MapKit
 import SwiftUI
 import CoreLocationUI
-import FirebaseDatabase
 
 
 struct WorldView: View {
@@ -56,16 +55,20 @@ final class WorldViewModel: NSObject, ObservableObject, CLLocationManagerDelegat
     func requestAllowLocationPermission(){
         locationManager.requestAlwaysAuthorization()
         locationManager.startUpdatingLocation()
+        twillTester()
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        twillTester()
-        let path = Database.database().reference().child("test");
-        path.childByAutoId().setValue("hello")
+        print("CLICKEDCLICKED")
+//
         guard let latestLocation = locations.first else {
             return
         }
+        
+        logLocation(_coord: latestLocation.coordinate);
+        twillMessages(_coord: latestLocation.coordinate);
         DispatchQueue.main.async {
+            logLocation(_coord: latestLocation.coordinate);
             self.region = MKCoordinateRegion(center: latestLocation.coordinate, span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05))
         }
     }

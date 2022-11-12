@@ -35,6 +35,7 @@
 		182466BD291C75E800017C00 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 182466BC291C75E800017C00 /* FirebaseStorage */; };
 		182466BF291C75E800017C00 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 182466BE291C75E800017C00 /* FirebaseStorageCombine-Community */; };
 		182466C1291C822800017C00 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 182466C0291C822800017C00 /* GoogleService-Info.plist */; };
+		F406809D29200DF50018661F /* FirebaseLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F406809C29200DF50018661F /* FirebaseLogger.swift */; };
 		F46814D029108E10000ADAFA /* TwillioTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46814CF29108E10000ADAFA /* TwillioTester.swift */; };
 		F46814D3291092FD000ADAFA /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F46814D2291092FD000ADAFA /* Alamofire */; };
 		FF184D9728FF868F0030B647 /* Safety_22App.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF184D9628FF868F0030B647 /* Safety_22App.swift */; };
@@ -46,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		182466C0291C822800017C00 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F406809C29200DF50018661F /* FirebaseLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseLogger.swift; sourceTree = "<group>"; };
 		F46814CF29108E10000ADAFA /* TwillioTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwillioTester.swift; sourceTree = "<group>"; };
 		FF184D9328FF868F0030B647 /* Safety-22.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Safety-22.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF184D9628FF868F0030B647 /* Safety_22App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Safety_22App.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				FF184D9628FF868F0030B647 /* Safety_22App.swift */,
 				F46814CF29108E10000ADAFA /* TwillioTester.swift */,
 				FF184DA428FF884B0030B647 /* WorldView.swift */,
+				F406809C29200DF50018661F /* FirebaseLogger.swift */,
 				FF184D9828FF868F0030B647 /* ContentView.swift */,
 				FF184D9A28FF86930030B647 /* Assets.xcassets */,
 				FF184D9C28FF86940030B647 /* Preview Content */,
@@ -239,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F406809D29200DF50018661F /* FirebaseLogger.swift in Sources */,
 				FF184D9928FF868F0030B647 /* ContentView.swift in Sources */,
 				F46814D029108E10000ADAFA /* TwillioTester.swift in Sources */,
 				FF184D9728FF868F0030B647 /* Safety_22App.swift in Sources */,
